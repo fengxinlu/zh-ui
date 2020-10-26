@@ -18,6 +18,9 @@
       "pre-commit": "npm run lint"
     }
   },
+  "lint-staged": {
+    "*.{js,vue,md,less}": ["npm run lint", "git add"]
+  },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "2.6.12",
@@ -41,6 +44,7 @@
     "husky": "^4.3.0",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "lint-staged": "^10.4.2",
     "vue-template-compiler": "2.6.12",
     "vuepress": "^1.7.1"
   }
