@@ -1,0 +1,15 @@
+node_modules/
+example/
+.vscode/
+packages/
+public/
+tests/
+.browserslistrc
+.editorconfig
+.eslintirc
+.gitignore
+babel.config.js
+jest.config.js
+package-lock.json
+yarn.lock
+vue.config.js

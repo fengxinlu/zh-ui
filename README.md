@@ -1,4 +1,4 @@
-# test-ui
+# zh-ui
 
 ## Project setup
 ```
