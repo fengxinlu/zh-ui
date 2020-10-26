@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       text: '默认文本'
     }
