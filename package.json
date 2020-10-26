@@ -11,7 +11,8 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "docs:dev": "vue-cli-service build && vuepress dev docs",
-    "docs:build": "vue-cli-service build && vuepress build docs"
+    "docs:build": "vue-cli-service build && vuepress build docs",
+    "commit": "git-cz"
   },
   "husky": {
     "hooks": {
@@ -19,7 +20,15 @@
     }
   },
   "lint-staged": {
-    "*.{js,vue,md,less}": ["npm run lint", "git add"]
+    "*.{js,vue,md,less}": [
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -35,6 +44,8 @@
     "@vue/eslint-config-standard": "^5.1.2",
     "@vue/test-utils": "^1.0.3",
     "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
