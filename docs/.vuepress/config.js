@@ -31,7 +31,7 @@ module.exports = {
     }
   },
   plugins: [
-    require('./aliasPlugin.js'),
-    require('./additionalPagesPlugin.js')
+    require('./plugins/alias.js'),
+    require('./plugins/additionalPages.js')
   ]
 }
