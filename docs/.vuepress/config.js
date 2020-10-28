@@ -7,7 +7,7 @@ module.exports = {
     nav: [
       { text: '主页', link: '/' },
       { text: '组件', link: '/component/guide/introduction' },
-      { text: '更新日志', link: '/component/guide/log' }
+      { text: '更新日志', link: '/log' }
     ],
     sidebar: {
       '/component/': [
@@ -16,8 +16,7 @@ module.exports = {
           collapsable: false,
           children: [
             'guide/introduction',
-            'guide/guide',
-            'guide/log'
+            'guide/guide'
           ]
         },
         {
@@ -30,5 +29,9 @@ module.exports = {
         },
       ]
     }
-  }
+  },
+  plugins: [
+    require('./aliasPlugin.js'),
+    require('./additionalPagesPlugin.js')
+  ]
 }
