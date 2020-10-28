@@ -1,12 +1,15 @@
 <template>
-<div class="zh-text">{{text || defaultText}}</div>
+<div class="zh-text">{{text}}</div>
 </template>
 
 <script>
 export default {
   name: 'zh-text',
   props: {
-    text: String
+    text: {
+      type: String,
+      default: '测试按需引入Text'
+    }
   },
   data () {
     return {
@@ -16,6 +19,8 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
+@import "~styles/var.less";
+@import "~styles/mixins.less";
 @import "./css/index.less";
 </style>

@@ -36,7 +36,8 @@ const devConfig = {
       alias: {
         '@': resolve('packages'),
         assets: resolve('examples/assets'),
-        views: resolve('examples/views')
+        views: resolve('examples/views'),
+        styles: resolve('styles')
       }
     }
   },
@@ -77,6 +78,15 @@ const prodConfig = {
         commonjs: 'vue',
         commonjs2: 'vue',
         amd: 'vue'
+      }
+    },
+    resolve: {
+      extensions: ['.js', '.vue', '.json'],
+      alias: {
+        '@': resolve('packages'),
+        assets: resolve('examples/assets'),
+        views: resolve('examples/views'),
+        styles: resolve('styles')
       }
     }
   },

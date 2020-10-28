@@ -13,6 +13,8 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
+@import "~styles/var.less";
+@import "~styles/mixins.less";
 @import "./css/index.less";
 </style>

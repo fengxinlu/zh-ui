@@ -6,7 +6,8 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
-      { text: '组件', link: '/component/guide/introduction' }
+      { text: '组件', link: '/component/guide/introduction' },
+      { text: '更新日志', link: '/component/guide/log' }
     ],
     sidebar: {
       '/component/': [
@@ -15,7 +16,8 @@ module.exports = {
           collapsable: false,
           children: [
             'guide/introduction',
-            'guide/guide'
+            'guide/guide',
+            'guide/log'
           ]
         },
         {
